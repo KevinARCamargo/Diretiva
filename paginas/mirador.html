@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIRETIVA - Detalhes do Loteamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="paginas.css">
+    <style>
+        .project-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url('../imagens/mirador/mirador.JPG');
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="../imagens/logo.png" alt="Diretiva Construtora">
+            </a>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#projects" class="active">Projetos</a></li>
+                    <li><a href="../index.html#about">Quem Somos</a></li>
+                    <li><a href="../#contact">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero do Projeto -->
+    <section class="project-hero">
+        <div class="project-hero-overlay"></div>
+        <div class="project-hero-content">
+            <h1>Loteamento Mirador</h1>
+            <p>Um empreendimento exclusivo com vista panorâmica, localizado em Passos/MG, projetado para oferecer conforto, segurança e qualidade de vida para você e sua família.</p>
+            <div class="project-meta">
+                <div class="project-meta-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>Passos/MG</div>
+                </div>
+                <div class="project-meta-item">
+                    <i class="fas fa-home"></i>
+                    <div>120 unidades</div>
+                </div>
+                <div class="project-meta-item">
+                    <i class="fas fa-tag"></i>
+                    <div>A partir de R$ 80.000,00</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Galeria do Loteamento</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item animate">
+                    <img src="../imagens/mirador/mirador.JPG" alt="Entrada do Loteamento">
+                    <div class="gallery-item-overlay">Entrada Principal</div>
+                </div>
+                <div class="gallery-item animate">
+                    <img src="../imagens/mirador/2.JPG" alt="Loteamento">
+                    <div class="gallery-item-overlay">Área de Lotes</div>
+                </div>
+                <div class="gallery-item animate">
+                    <img src="../imagens/mirador/3.JPG" alt="Infraestrutura">
+                    <div class="gallery-item-overlay">Infraestrutura Completa</div>
+                </div>
+                <div class="gallery-item animate">
+                    <img src="../imagens/mirador/4.JPG" alt="Área de Lazer">
+                    <div class="gallery-item-overlay">Área de Lazer</div>
+                </div>
+                <div class="gallery-item animate">
+                    <img src="../imagens/mirador/5.JPG" alt="Vista Panorâmica">
+                    <div class="gallery-item-overlay">Vista Panorâmica</div>
+                </div>
+                <div class="gallery-item animate">
+                    <img src="../imagens/mirador/6.JPG" alt="Casas Construídas">
+                    <div class="gallery-item-overlay">Casas Construídas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações do Loteamento -->
+    <section class="lot-info">
+        <div class="container">
+            <h2 class="section-title">Informações dos Loteeamento</h2>
+            <div class="lot-info-grid">
+                <div class="lot-features">
+                    <h3>Características do Empreendimento</h3>
+                    <ul class="features-list">
+                        <li>
+                            <span class="feature-name">Área Total do Loteamento</span>
+                            <span class="feature-value">50.000 m²</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Número de Lotes</span>
+                            <span class="feature-value">120 unidades</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Infraestrutura</span>
+                            <span class="feature-value">Completa</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Ruas</span>
+                            <span class="feature-value">Pavimentadas e iluminadas</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Rede de Esgoto</span>
+                            <span class="feature-value">Sim</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Água e Energia</span>
+                            <span class="feature-value">Rede pública</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Área de Lazer</span>
+                            <span class="feature-value">Piscina, quadra e playground</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Segurança</span>
+                            <span class="feature-value">24 horas</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="lot-sizes">
+                        <h3>Tipos de Lotes Disponíveis</h3>
+                        
+                        <div class="size-card">
+                            <div class="size-card-header">
+                                <div class="size-price">R$ 80.000,00</div>
+                                <div class="size-dimensions">200m²</div>
+                            </div>
+                            <p>Lotes padrão com ótima localização e infraestrutura completa.</p>
+                            <div class="size-features">
+                                <span class="size-feature">Área plana</span>
+                                <span class="size-feature">Esquina</span>
+                                <span class="size-feature">Vista livre</span>
+                            </div>
+                        </div>
+                        
+                        <div class="size-card">
+                            <div class="size-card-header">
+                                <div class="size-price">R$ 120.000,00</div>
+                                <div class="size-dimensions">350m²</div>
+                            </div>
+                            <p>Lotes premium com melhor posicionamento e vista panorâmica.</p>
+                            <div class="size-features">
+                                <span class="size-feature">Vista privilegiada</span>
+                                <span class="size-feature">Maior área</span>
+                                <span class="size-feature">Localização nobre</span>
+                            </div>
+                        </div>
+                        
+                        <div class="size-card">
+                            <div class="size-card-header">
+                                <div class="size-price">R$ 150.000,00</div>
+                                <div class="size-dimensions">500m²</div>
+                            </div>
+                            <p>Lotes VIP com as melhores características do loteamento.</p>
+                            <div class="size-features">
+                                <span class="size-feature">Área premium</span>
+                                <span class="size-feature">Posição estratégica</span>
+                                <span class="size-feature">Exclusividade</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lot-features">
+                    <h3>Benefícios Exclusivos</h3>
+                    <ul class="features-list">
+                        <li>
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-right: 10px;"></i>
+                            <span>Financiamento facilitado com condições especiais</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-right: 10px;"></i>
+                            <span>Possibilidade de parcelamento em até 60 meses</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-right: 10px;"></i>
+                            <span>Isenção de ITBI para a primeira transferência</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-right: 10px;"></i>
+                            <span>Assessoria completa para construção</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle" style="color: var(--success); margin-right: 10px;"></i>
+                            <span>Projeto arquitetônico gratuito</span>
+                        </li>
+                    </ul>
+                    
+                    <h3 style="margin-top: 30px;">Cronograma de Obras</h3>
+                    <ul class="features-list">
+                        <li>
+                            <span class="feature-name">Início das Obras</span>
+                            <span class="feature-value">Janeiro 2023</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Infraestrutura</span>
+                            <span class="feature-value">Concluída</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Entrega dos Lotes</span>
+                            <span class="feature-value">Imediata</span>
+                        </li>
+                        <li>
+                            <span class="feature-name">Área de Lazer</span>
+                            <span class="feature-value">Dezembro 2023</span>
+                        </li>
+                    </ul>
+                    
+                    <h3 style="margin-top: 30px;">Documentação</h3>
+                    <p>Todos os lotes possuem matrícula atualizada, registro de incorporação (RI) e Habite-se da infraestrutura, garantindo total segurança jurídica para os proprietários.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="location-section">
+        <div class="container">
+            <h2 class="section-title">Localização Privilegiada</h2>
+            <div class="location-content">
+                <div class="map-container" id="map">
+                    <!-- Mapa será inserido via JavaScript -->
+                </div>
+                
+                <div class="location-details">
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="location-item-content">
+                            <h4>Endereço</h4>
+                            <p>Rua das Palmeiras, 1500 - Bairro Mirador<br>Passos/MG - CEP 37900-000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-item">
+                        <i class="fas fa-road"></i>
+                        <div class="location-item-content">
+                            <h4>Acesso</h4>
+                            <p>Facilidade de acesso pela MG-050, a 5 minutos do centro da cidade e próximo às principais vias de circulação.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-item">
+                        <i class="fas fa-building"></i>
+                        <div class="location-item-content">
+                            <h4>Vizinhança</h4>
+                            <p>Localizado em área nobre da cidade, próximo a escolas, mercados, farmácias e comércio em geral.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-item">
+                        <i class="fas fa-tree"></i>
+                        <div class="location-item-content">
+                            <h4>Meio Ambiente</h4>
+                            <p>Área com vegetação preservada, arborização planejada e proteção de nascentes, garantindo qualidade ambiental.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Call to Action -->
+    <section class="project-cta">
+        <div class="container">
+            <h2>Interessado neste loteamento?</h2>
+            <p>Entre em contato com nossa equipe para agendar uma visita, solicitar mais informações ou reservar seu lote com condições especiais.</p>
+            <a href="#contact" class="cta-button">Fale Conosco Agora</a>
+        </div>
+    </section>
+
+    
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>© 2025 Diretiva | Todos os direitos reservados</p>
+            <p>Desenvolvido por <a href="#" target="_blank">RPM Marketing</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Menu Mobile
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Scroll Suave
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Animação ao Scroll
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.animate').forEach(element => {
+                observer.observe(element);
+            });
+
+            // Mapa de Localização
+            const map = L.map('map').setView([-20.7189, -46.6098], 14);
+            
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+            
+            L.marker([-20.7189, -46.6098]).addTo(map)
+                .bindPopup('Loteamento Mirador<br>Passos/MG')
+                .openPopup();
+        });
+    </script>
+</body>
+</html>
